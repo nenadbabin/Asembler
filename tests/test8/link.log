@@ -67,51 +67,56 @@ a6 00 b3 00 df 00 90 01
 2e 00 0a 00 00 00 
 
 
-noAccesso.txt .text 9e
-noAccesso.txt .data 10
+test8o.txt .text 9e
+test8o.txt .data 10
 stdo.txt .ivTable 0
 stdo.txt .text a6
 stdo.txt .data 16
 
 %SYMBOLS%
            NAME        SECTION          VALUE          SCOPE         NUMBER
-noAccesso.txt
-           main          .text             9e         GLOBAL              0
-         myProg          .data             10          LOCAL              2
+test8o.txt
+           text          .text             9e          LOCAL              0
+           main          .text             9e         GLOBAL              1
+           data          .data             10          LOCAL              3
+         myProg          .data             10          LOCAL              4
 stdo.txt
-         _start          .text             a6         GLOBAL              0
-          error          .text             b3         GLOBAL              1
-          timer          .text             df         GLOBAL              2
-       terminal          .text            190         GLOBAL              3
-        getchar          .text            1a6         GLOBAL              4
-    currentTime          .data             16         GLOBAL              5
-         dataIn          .data             18         GLOBAL              6
-        dataOut          .data             1a         GLOBAL              7
-       printstr          .text            1c0         GLOBAL              8
-         error1          .text             c7          LOCAL              b
-         error2          .text             cf          LOCAL              c
-     printError          .text             d7          LOCAL              d
-           add0          .text            137          LOCAL              e
-           add1          .text            142          LOCAL              f
-           add2          .text            14d          LOCAL             10
-           add3          .text            158          LOCAL             11
-           add4          .text            163          LOCAL             12
-           add5          .text            16e          LOCAL             13
-           add6          .text            179          LOCAL             14
-           add7          .text            184          LOCAL             15
-       endTimer          .text            18f          LOCAL             16
-         loopGC          .text            1ad          LOCAL             17
-   printstrLoop          .text            1cd          LOCAL             18
-    printstrEnd          .text            1e2          LOCAL             19
-     keyPressed          .data             1c          LOCAL             1b
-     currentKey          .data             1e          LOCAL             1c
-       errorMsg          .data             20          LOCAL             1d
-    noAccessMsg          .data             62          LOCAL             1e
+        ivTable       .ivTable              0          LOCAL              0
+           text          .text             a6          LOCAL              2
+         _start          .text             a6         GLOBAL              3
+          error          .text             b3         GLOBAL              4
+         error1          .text             c7          LOCAL              5
+         error2          .text             cf          LOCAL              6
+     printError          .text             d7          LOCAL              7
+          timer          .text             df         GLOBAL              8
+           add0          .text            137          LOCAL              9
+           add1          .text            142          LOCAL              a
+           add2          .text            14d          LOCAL              b
+           add3          .text            158          LOCAL              c
+           add4          .text            163          LOCAL              d
+           add5          .text            16e          LOCAL              e
+           add6          .text            179          LOCAL              f
+           add7          .text            184          LOCAL             10
+       endTimer          .text            18f          LOCAL             11
+       terminal          .text            190         GLOBAL             12
+        getchar          .text            1a6         GLOBAL             13
+         loopGC          .text            1ad          LOCAL             14
+       printstr          .text            1c0         GLOBAL             15
+   printstrLoop          .text            1cd          LOCAL             16
+    printstrEnd          .text            1e2          LOCAL             17
+           data          .data             16          LOCAL             19
+    currentTime          .data             16         GLOBAL             1a
+         dataIn          .data             18         GLOBAL             1b
+        dataOut          .data             1a         GLOBAL             1c
+     keyPressed          .data             1c          LOCAL             1d
+     currentKey          .data             1e          LOCAL             1e
+       errorMsg          .data             20          LOCAL             1f
+    noAccessMsg          .data             62          LOCAL             20
 %END%
 
 %RELOCATIONS%
          OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
-noAccesso.txt
+test8o.txt
              a1          .text         myProg          .data           R_16
 stdo.txt
               0       .ivTable         _start         _start           R_16

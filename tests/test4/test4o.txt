@@ -1,21 +1,23 @@
 %SECTIONS%
            NAME           SIZE         NUMBER         R  W  E  P
-          .text             80              8         1  0  1  1
-          .data             52             11         1  1  0  1
+          .text             80              4         1  0  1  1
+          .data             52              8         1  1  0  1
 %END%
 
 %SYMBOLS%
            NAME        SECTION          VALUE          SCOPE         NUMBER
-           main          .text              0         GLOBAL              0
-          timer      undefined              0         GLOBAL              1
-         dataIn      undefined              0         GLOBAL              2
-        getchar      undefined              0         GLOBAL              3
-        dataOut      undefined              0         GLOBAL              4
-       printstr      undefined              0         GLOBAL              5
-           loop          .text             29          LOCAL              6
-     newRoutine          .text             62          LOCAL              7
-       myString          .data              0          LOCAL              9
-      endString          .data             40          LOCAL             10
+           text          .text              0          LOCAL              0
+           main          .text              0         GLOBAL              1
+           loop          .text             29          LOCAL              2
+     newRoutine          .text             62          LOCAL              3
+           data          .data              0          LOCAL              5
+       myString          .data              0          LOCAL              6
+      endString          .data             40          LOCAL              7
+          timer      undefined              0         GLOBAL              0
+         dataIn      undefined              0         GLOBAL              1
+        getchar      undefined              0         GLOBAL              2
+        dataOut      undefined              0         GLOBAL              3
+       printstr      undefined              0         GLOBAL              4
 %END%
 
 %RELOCATIONS%

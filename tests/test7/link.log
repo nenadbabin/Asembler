@@ -68,56 +68,60 @@ b7 00 c4 00 f0 00 a1 01
 67 00 2e 00 0a 00 00 00 
 
 
-constmaino.txt .text 98
+test7maino.txt .text 98
 stdo.txt .ivTable 0
 stdo.txt .text b7
 stdo.txt .data 10
 
 %SYMBOLS%
            NAME        SECTION          VALUE          SCOPE         NUMBER
-consto.txt
+test7consto.txt
               N       absolute             43         GLOBAL              0
               M       absolute           1234         GLOBAL              0
               P       absolute           ffff         GLOBAL              0
               Q       absolute           fff0         GLOBAL              0
-constmaino.txt
-           main          .text             98         GLOBAL              4
-             MY       absolute             11          LOCAL              5
+test7maino.txt
+             MY       absolute             11          LOCAL              0
+           text          .text             98          LOCAL              0
+           main          .text             98         GLOBAL              1
 stdo.txt
-         _start          .text             b7         GLOBAL              0
-          error          .text             c4         GLOBAL              1
-          timer          .text             f0         GLOBAL              2
-       terminal          .text            1a1         GLOBAL              3
-        getchar          .text            1b7         GLOBAL              4
-    currentTime          .data             10         GLOBAL              5
-         dataIn          .data             12         GLOBAL              6
-        dataOut          .data             14         GLOBAL              7
-       printstr          .text            1d1         GLOBAL              8
-         error1          .text             d8          LOCAL              b
-         error2          .text             e0          LOCAL              c
-     printError          .text             e8          LOCAL              d
-           add0          .text            148          LOCAL              e
-           add1          .text            153          LOCAL              f
-           add2          .text            15e          LOCAL             10
-           add3          .text            169          LOCAL             11
-           add4          .text            174          LOCAL             12
-           add5          .text            17f          LOCAL             13
-           add6          .text            18a          LOCAL             14
-           add7          .text            195          LOCAL             15
-       endTimer          .text            1a0          LOCAL             16
-         loopGC          .text            1be          LOCAL             17
-   printstrLoop          .text            1de          LOCAL             18
-    printstrEnd          .text            1f3          LOCAL             19
-     keyPressed          .data             16          LOCAL             1b
-     currentKey          .data             18          LOCAL             1c
-       errorMsg          .data             1a          LOCAL             1d
-    noAccessMsg          .data             5c          LOCAL             1e
+        ivTable       .ivTable              0          LOCAL              0
+           text          .text             b7          LOCAL              2
+         _start          .text             b7         GLOBAL              3
+          error          .text             c4         GLOBAL              4
+         error1          .text             d8          LOCAL              5
+         error2          .text             e0          LOCAL              6
+     printError          .text             e8          LOCAL              7
+          timer          .text             f0         GLOBAL              8
+           add0          .text            148          LOCAL              9
+           add1          .text            153          LOCAL              a
+           add2          .text            15e          LOCAL              b
+           add3          .text            169          LOCAL              c
+           add4          .text            174          LOCAL              d
+           add5          .text            17f          LOCAL              e
+           add6          .text            18a          LOCAL              f
+           add7          .text            195          LOCAL             10
+       endTimer          .text            1a0          LOCAL             11
+       terminal          .text            1a1         GLOBAL             12
+        getchar          .text            1b7         GLOBAL             13
+         loopGC          .text            1be          LOCAL             14
+       printstr          .text            1d1         GLOBAL             15
+   printstrLoop          .text            1de          LOCAL             16
+    printstrEnd          .text            1f3          LOCAL             17
+           data          .data             10          LOCAL             19
+    currentTime          .data             10         GLOBAL             1a
+         dataIn          .data             12         GLOBAL             1b
+        dataOut          .data             14         GLOBAL             1c
+     keyPressed          .data             16          LOCAL             1d
+     currentKey          .data             18          LOCAL             1e
+       errorMsg          .data             1a          LOCAL             1f
+    noAccessMsg          .data             5c          LOCAL             20
 %END%
 
 %RELOCATIONS%
          OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
-consto.txt
-constmaino.txt
+test7consto.txt
+test7maino.txt
              9b          .text              N              N           R_16
              a5          .text              M              M           R_16
              aa          .text              P              P           R_16

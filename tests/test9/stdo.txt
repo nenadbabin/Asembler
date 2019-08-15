@@ -1,41 +1,44 @@
 %SECTIONS%
            NAME           SIZE         NUMBER         R  W  E  P
-       .ivTable             16             10         1  1  0  1
-          .text            321             26         1  0  1  1
-          .data            136             31         1  1  0  1
+       .ivTable             16              1         1  1  0  1
+          .text            321             24         1  0  1  1
+          .data            136             33         1  1  0  1
 %END%
 
 %SYMBOLS%
            NAME        SECTION          VALUE          SCOPE         NUMBER
-         _start          .text              0         GLOBAL              0
-          error          .text             13         GLOBAL              1
-          timer          .text             57         GLOBAL              2
-       terminal          .text            234         GLOBAL              3
-        getchar          .text            256         GLOBAL              4
-    currentTime          .data              0         GLOBAL              5
-         dataIn          .data              2         GLOBAL              6
-        dataOut          .data              4         GLOBAL              7
-       printstr          .text            282         GLOBAL              8
-           main      undefined              0         GLOBAL              9
-         error1          .text             33          LOCAL             11
-         error2          .text             41          LOCAL             12
-     printError          .text             49          LOCAL             13
-           add0          .text            145          LOCAL             14
-           add1          .text            156          LOCAL             15
-           add2          .text            167          LOCAL             16
-           add3          .text            178          LOCAL             17
-           add4          .text            189          LOCAL             18
-           add5          .text            200          LOCAL             19
-           add6          .text            211          LOCAL             20
-           add7          .text            222          LOCAL             21
-       endTimer          .text            233          LOCAL             22
-         loopGC          .text            263          LOCAL             23
-   printstrLoop          .text            295          LOCAL             24
-    printstrEnd          .text            316          LOCAL             25
-     keyPressed          .data              6          LOCAL             27
-     currentKey          .data              8          LOCAL             28
-       errorMsg          .data             10          LOCAL             29
-    noAccessMsg          .data             76          LOCAL             30
+        ivTable       .ivTable              0          LOCAL              0
+           text          .text              0          LOCAL              2
+         _start          .text              0         GLOBAL              3
+          error          .text             13         GLOBAL              4
+         error1          .text             33          LOCAL              5
+         error2          .text             41          LOCAL              6
+     printError          .text             49          LOCAL              7
+          timer          .text             57         GLOBAL              8
+           add0          .text            145          LOCAL              9
+           add1          .text            156          LOCAL             10
+           add2          .text            167          LOCAL             11
+           add3          .text            178          LOCAL             12
+           add4          .text            189          LOCAL             13
+           add5          .text            200          LOCAL             14
+           add6          .text            211          LOCAL             15
+           add7          .text            222          LOCAL             16
+       endTimer          .text            233          LOCAL             17
+       terminal          .text            234         GLOBAL             18
+        getchar          .text            256         GLOBAL             19
+         loopGC          .text            263          LOCAL             20
+       printstr          .text            282         GLOBAL             21
+   printstrLoop          .text            295          LOCAL             22
+    printstrEnd          .text            316          LOCAL             23
+           data          .data              0          LOCAL             25
+    currentTime          .data              0         GLOBAL             26
+         dataIn          .data              2         GLOBAL             27
+        dataOut          .data              4         GLOBAL             28
+     keyPressed          .data              6          LOCAL             29
+     currentKey          .data              8          LOCAL             30
+       errorMsg          .data             10          LOCAL             31
+    noAccessMsg          .data             76          LOCAL             32
+           main      undefined              0         GLOBAL              0
 %END%
 
 %RELOCATIONS%

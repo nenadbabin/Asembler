@@ -82,54 +82,59 @@ c4
 0a 00 00 00 
 
 
-timerTesto.txt .text cc
-timerTesto.txt .data 10
+test4o.txt .text cc
+test4o.txt .data 10
 stdo.txt .ivTable 0
 stdo.txt .text 11c
 stdo.txt .data 44
 
 %SYMBOLS%
            NAME        SECTION          VALUE          SCOPE         NUMBER
-timerTesto.txt
-           main          .text             cc         GLOBAL              0
-           loop          .text             e9          LOCAL              6
-     newRoutine          .text            10a          LOCAL              7
-       myString          .data             10          LOCAL              9
-      endString          .data             38          LOCAL              a
+test4o.txt
+           text          .text             cc          LOCAL              0
+           main          .text             cc         GLOBAL              1
+           loop          .text             e9          LOCAL              2
+     newRoutine          .text            10a          LOCAL              3
+           data          .data             10          LOCAL              5
+       myString          .data             10          LOCAL              6
+      endString          .data             38          LOCAL              7
 stdo.txt
-         _start          .text            11c         GLOBAL              0
-          error          .text            129         GLOBAL              1
-          timer          .text            155         GLOBAL              2
-       terminal          .text            206         GLOBAL              3
-        getchar          .text            21c         GLOBAL              4
-    currentTime          .data             44         GLOBAL              5
-         dataIn          .data             46         GLOBAL              6
-        dataOut          .data             48         GLOBAL              7
-       printstr          .text            236         GLOBAL              8
-         error1          .text            13d          LOCAL              b
-         error2          .text            145          LOCAL              c
-     printError          .text            14d          LOCAL              d
-           add0          .text            1ad          LOCAL              e
-           add1          .text            1b8          LOCAL              f
-           add2          .text            1c3          LOCAL             10
-           add3          .text            1ce          LOCAL             11
-           add4          .text            1d9          LOCAL             12
-           add5          .text            1e4          LOCAL             13
-           add6          .text            1ef          LOCAL             14
-           add7          .text            1fa          LOCAL             15
-       endTimer          .text            205          LOCAL             16
-         loopGC          .text            223          LOCAL             17
-   printstrLoop          .text            243          LOCAL             18
-    printstrEnd          .text            258          LOCAL             19
-     keyPressed          .data             4a          LOCAL             1b
-     currentKey          .data             4c          LOCAL             1c
-       errorMsg          .data             4e          LOCAL             1d
-    noAccessMsg          .data             90          LOCAL             1e
+        ivTable       .ivTable              0          LOCAL              0
+           text          .text            11c          LOCAL              2
+         _start          .text            11c         GLOBAL              3
+          error          .text            129         GLOBAL              4
+         error1          .text            13d          LOCAL              5
+         error2          .text            145          LOCAL              6
+     printError          .text            14d          LOCAL              7
+          timer          .text            155         GLOBAL              8
+           add0          .text            1ad          LOCAL              9
+           add1          .text            1b8          LOCAL              a
+           add2          .text            1c3          LOCAL              b
+           add3          .text            1ce          LOCAL              c
+           add4          .text            1d9          LOCAL              d
+           add5          .text            1e4          LOCAL              e
+           add6          .text            1ef          LOCAL              f
+           add7          .text            1fa          LOCAL             10
+       endTimer          .text            205          LOCAL             11
+       terminal          .text            206         GLOBAL             12
+        getchar          .text            21c         GLOBAL             13
+         loopGC          .text            223          LOCAL             14
+       printstr          .text            236         GLOBAL             15
+   printstrLoop          .text            243          LOCAL             16
+    printstrEnd          .text            258          LOCAL             17
+           data          .data             44          LOCAL             19
+    currentTime          .data             44         GLOBAL             1a
+         dataIn          .data             46         GLOBAL             1b
+        dataOut          .data             48         GLOBAL             1c
+     keyPressed          .data             4a          LOCAL             1d
+     currentKey          .data             4c          LOCAL             1e
+       errorMsg          .data             4e          LOCAL             1f
+    noAccessMsg          .data             90          LOCAL             20
 %END%
 
 %RELOCATIONS%
          OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
-timerTesto.txt
+test4o.txt
              d8          .text     newRoutine          .text           R_16
              dd          .text         dataIn         dataIn           R_16
              e2          .text        getchar        getchar           R_16

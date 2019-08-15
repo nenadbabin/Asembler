@@ -99,19 +99,15 @@ r2 0000
 r3 0000
 r4 0000
 r5 0000
-r6 fef8
-r7 00b3
-psw 0000
+r6 fefc
+r7 00a5
+psw 0001
 
 %Stack%
 00
 b2
 00
 02
-00
-a5
-00
-01
 
 %Changed values in memory%
 There were no changes in memory.

@@ -1,16 +1,17 @@
 %SECTIONS%
            NAME           SIZE         NUMBER         R  W  E  P
-          .text             31              5         1  0  1  1
+          .text             31              2         1  0  1  1
 %END%
 
 %SYMBOLS%
            NAME        SECTION          VALUE          SCOPE         NUMBER
+             MY       absolute             17          LOCAL              0
+           text          .text              0          LOCAL              0
+           main          .text              0         GLOBAL              1
               N      undefined              0         GLOBAL              0
               M      undefined              0         GLOBAL              1
               P      undefined              0         GLOBAL              2
               Q      undefined              0         GLOBAL              3
-           main          .text              0         GLOBAL              4
-             MY       absolute             17          LOCAL              5
 %END%
 
 %RELOCATIONS%

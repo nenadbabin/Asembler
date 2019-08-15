@@ -1,13 +1,15 @@
 %SECTIONS%
            NAME           SIZE         NUMBER         R  W  E  P
           .data              4              2         1  1  0  1
-          .text             20              3         1  0  1  1
+          .text             20              5         1  0  1  1
 %END%
 
 %SYMBOLS%
            NAME        SECTION          VALUE          SCOPE         NUMBER
-           main          .text              0         GLOBAL              0
+           data          .data              0          LOCAL              0
          symbol          .data              0          LOCAL              1
+           text          .text              0          LOCAL              3
+           main          .text              0         GLOBAL              4
 %END%
 
 %RELOCATIONS%

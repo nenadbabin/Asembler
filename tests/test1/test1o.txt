@@ -1,15 +1,17 @@
 %SECTIONS%
            NAME           SIZE         NUMBER         R  W  E  P
-       .sekcija             41              2         1  0  1  1
-          .data              2              4         1  1  0  1
+       .sekcija             41              3         1  0  1  1
+          .data              2              6         1  1  0  1
 %END%
 
 %SYMBOLS%
            NAME        SECTION          VALUE          SCOPE         NUMBER
               N       absolute          65290          LOCAL              0
-           main       .sekcija              0         GLOBAL              0
-          label       .sekcija             15          LOCAL              1
-        address          .data              0          LOCAL              3
+        sekcija       .sekcija              0          LOCAL              0
+           main       .sekcija              0         GLOBAL              1
+          label       .sekcija             15          LOCAL              2
+           data          .data              0          LOCAL              4
+        address          .data              0          LOCAL              5
 %END%
 
 %RELOCATIONS%

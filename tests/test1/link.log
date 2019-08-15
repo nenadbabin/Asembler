@@ -84,38 +84,43 @@ stdo.txt .data 1143
            NAME        SECTION          VALUE          SCOPE         NUMBER
 test1o.txt
               N       absolute           ff0a          LOCAL              0
-           main       .sekcija           11cb         GLOBAL              0
-          label       .sekcija           11da          LOCAL              1
-        address          .data           1141          LOCAL              3
+        sekcija       .sekcija           11cb          LOCAL              0
+           main       .sekcija           11cb         GLOBAL              1
+          label       .sekcija           11da          LOCAL              2
+           data          .data           1141          LOCAL              4
+        address          .data           1141          LOCAL              5
 stdo.txt
-         _start          .text           1000         GLOBAL              0
-          error          .text           100d         GLOBAL              1
-          timer          .text           1039         GLOBAL              2
-       terminal          .text           10ea         GLOBAL              3
-        getchar          .text           1100         GLOBAL              4
-    currentTime          .data           1143         GLOBAL              5
-         dataIn          .data           1145         GLOBAL              6
-        dataOut          .data           1147         GLOBAL              7
-       printstr          .text           111a         GLOBAL              8
-         error1          .text           1021          LOCAL              b
-         error2          .text           1029          LOCAL              c
-     printError          .text           1031          LOCAL              d
-           add0          .text           1091          LOCAL              e
-           add1          .text           109c          LOCAL              f
-           add2          .text           10a7          LOCAL             10
-           add3          .text           10b2          LOCAL             11
-           add4          .text           10bd          LOCAL             12
-           add5          .text           10c8          LOCAL             13
-           add6          .text           10d3          LOCAL             14
-           add7          .text           10de          LOCAL             15
-       endTimer          .text           10e9          LOCAL             16
-         loopGC          .text           1107          LOCAL             17
-   printstrLoop          .text           1127          LOCAL             18
-    printstrEnd          .text           113c          LOCAL             19
-     keyPressed          .data           1149          LOCAL             1b
-     currentKey          .data           114b          LOCAL             1c
-       errorMsg          .data           114d          LOCAL             1d
-    noAccessMsg          .data           118f          LOCAL             1e
+        ivTable       .ivTable              0          LOCAL              0
+           text          .text           1000          LOCAL              2
+         _start          .text           1000         GLOBAL              3
+          error          .text           100d         GLOBAL              4
+         error1          .text           1021          LOCAL              5
+         error2          .text           1029          LOCAL              6
+     printError          .text           1031          LOCAL              7
+          timer          .text           1039         GLOBAL              8
+           add0          .text           1091          LOCAL              9
+           add1          .text           109c          LOCAL              a
+           add2          .text           10a7          LOCAL              b
+           add3          .text           10b2          LOCAL              c
+           add4          .text           10bd          LOCAL              d
+           add5          .text           10c8          LOCAL              e
+           add6          .text           10d3          LOCAL              f
+           add7          .text           10de          LOCAL             10
+       endTimer          .text           10e9          LOCAL             11
+       terminal          .text           10ea         GLOBAL             12
+        getchar          .text           1100         GLOBAL             13
+         loopGC          .text           1107          LOCAL             14
+       printstr          .text           111a         GLOBAL             15
+   printstrLoop          .text           1127          LOCAL             16
+    printstrEnd          .text           113c          LOCAL             17
+           data          .data           1143          LOCAL             19
+    currentTime          .data           1143         GLOBAL             1a
+         dataIn          .data           1145         GLOBAL             1b
+        dataOut          .data           1147         GLOBAL             1c
+     keyPressed          .data           1149          LOCAL             1d
+     currentKey          .data           114b          LOCAL             1e
+       errorMsg          .data           114d          LOCAL             1f
+    noAccessMsg          .data           118f          LOCAL             20
 %END%
 
 %RELOCATIONS%

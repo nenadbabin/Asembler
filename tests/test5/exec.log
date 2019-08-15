@@ -63,7 +63,7 @@ r4 0000
 r5 0000
 r6 fefe
 r7 009d
-psw 2000
+psw 0001
 
 %Stack%
 00
@@ -82,7 +82,7 @@ r4 0000
 r5 0000
 r6 fefe
 r7 00a4
-psw 2000
+psw 0000
 
 %Stack%
 00
@@ -101,7 +101,7 @@ r4 0000
 r5 0000
 r6 fefe
 r7 00ab
-psw 2000
+psw 0000
 
 %Stack%
 00
@@ -120,7 +120,7 @@ r4 0000
 r5 0000
 r6 fefe
 r7 00b0
-psw 2000
+psw 0000
 
 %Stack%
 00
@@ -137,17 +137,13 @@ r2 0004
 r3 0000
 r4 0000
 r5 0000
-r6 fefa
-r7 00c4
+r6 fefe
+r7 00b2
 psw 0000
 
 %Stack%
 00
 df
-00
-b2
-20
-00
 
 %Changed values in memory%
 There were no changes in memory.
@@ -169,7 +165,7 @@ psw 0000
 df
 00
 b2
-20
+00
 00
 00
 00
@@ -194,7 +190,7 @@ psw 0000
 df
 00
 b2
-20
+00
 00
 00
 00
@@ -219,7 +215,7 @@ psw 0000
 df
 00
 b2
-20
+00
 00
 00
 00
@@ -244,7 +240,7 @@ psw 0000
 df
 00
 b2
-20
+00
 00
 
 %Changed values in memory%
@@ -260,7 +256,7 @@ r4 0000
 r5 0000
 r6 fefe
 r7 00b2
-psw 2000
+psw 0000
 
 %Stack%
 00
@@ -279,7 +275,7 @@ r4 0000
 r5 0000
 r6 fefe
 r7 00b7
-psw 2000
+psw 0000
 
 %Stack%
 00
@@ -296,17 +292,13 @@ r2 0002
 r3 0000
 r4 0000
 r5 0000
-r6 fefa
-r7 010c
+r6 fefe
+r7 00b9
 psw 0000
 
 %Stack%
 00
 df
-00
-b9
-20
-00
 
 %Changed values in memory%
 There were no changes in memory.
@@ -328,7 +320,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -351,7 +343,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -374,7 +366,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -397,7 +389,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -420,7 +412,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -443,7 +435,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -466,7 +458,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -489,7 +481,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -512,7 +504,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -535,7 +527,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -558,7 +550,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -581,7 +573,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -604,7 +596,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -627,7 +619,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -650,7 +642,7 @@ psw 0001
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -673,7 +665,7 @@ psw 0001
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -696,7 +688,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -719,7 +711,7 @@ psw 0000
 df
 00
 b9
-20
+00
 00
 
 %Changed values in memory%
@@ -735,7 +727,7 @@ r4 0000
 r5 0000
 r6 fefe
 r7 00b9
-psw 2000
+psw 0000
 
 %Stack%
 00
@@ -754,7 +746,7 @@ r4 0000
 r5 0000
 r6 fefe
 r7 00be
-psw 2000
+psw 0000
 
 %Stack%
 00
@@ -773,7 +765,7 @@ r4 0000
 r5 0000
 r6 fefe
 r7 00c3
-psw 2000
+psw 0000
 
 %Stack%
 00
@@ -792,7 +784,7 @@ r4 0000
 r5 0000
 r6 ff00
 r7 00df
-psw 2000
+psw 0000
 
 %Stack%
 There's nothing on stack.
@@ -810,7 +802,7 @@ r4 0000
 r5 0000
 r6 ff00
 r7 00e0
-psw 2000
+psw 0000
 
 %Stack%
 There's nothing on stack.
