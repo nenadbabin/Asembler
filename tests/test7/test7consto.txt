@@ -1,0 +1,18 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+              N       absolute             67         GLOBAL              0
+              M       absolute           4660         GLOBAL              0
+              P       absolute          65535         GLOBAL              0
+              Q       absolute          65520         GLOBAL              0
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+%END%
+
+%SECTIONS_CONTENT%
+%END%

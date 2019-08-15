@@ -1,0 +1,67 @@
+.global main
+
+.extern timer
+.extern dataIn
+.extern getchar
+.extern dataOut
+.extern printstr
+
+.text
+main:
+	mov *0xff10, 3
+	mov *0x0004, &newRoutine
+	mov r2, dataIn
+	mov r3, &getchar
+	mov r4, dataOut
+loop:
+	call r3
+	mov r4[0], r2[0]
+	cmp r2[0], 101
+	jne &loop
+	mov r4[0], 10
+	push &endString
+	mov r2, &printstr
+	call r2
+	pop r2
+	ret
+
+newRoutine:
+	push r2
+	mov r2, &printstr
+	push &myString
+	call r2
+	pop r2
+	pop r2
+	iret
+	
+.data
+myString:
+	.word 116
+	.word 105
+	.word 109
+	.word 101
+	.word 114
+	.word 32
+	.word 105
+	.word 110
+	.word 116
+	.word 101
+	.word 114
+	.word 114
+	.word 117
+	.word 112
+	.word 116
+	.word 46
+	.word 46
+	.word 46
+	.word 10
+	.word 0
+	
+endString:
+	.word 69
+	.word 110
+	.word 100
+	.word 33
+	.word 10
+	.word 0
+.end

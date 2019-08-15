@@ -1,0 +1,203 @@
+.global _start
+.global error
+.global timer
+.global terminal
+.global getchar
+.global currentTime
+.global dataIn
+.global dataOut
+.global printstr
+
+.extern main
+
+.section ivTable "RWP"
+.word _start
+.word error
+.word timer
+.word terminal
+.word 0
+.word 0
+.word 0
+.word 0
+
+.text
+_start:
+	mov psw, 0x0000
+	mov r2, &main
+	call r2
+	halt
+	
+error:
+	cmp sp[4], 0x0001
+	jeq &error1
+	cmp sp[4], 0x0002
+	jeq &error2
+error1:
+	push &noAccessMsg
+	jmp &printError
+error2:
+	push &errorMsg
+	jmp &printError
+printError:
+	mov r3, &printstr
+	call r3
+	halt
+	
+timer:
+	cmp *0xff10, 0x0000
+	jeq &add0
+	cmp *0xff10, 0x0001
+	jeq &add1
+	cmp *0xff10, 0x0002
+	jeq &add2
+	cmp *0xff10, 0x0003
+	jeq &add3
+	cmp *0xff10, 0x0004
+	jeq &add4
+	cmp *0xff10, 0x0005
+	jeq &add5
+	cmp *0xff10, 0x0006
+	jeq &add6
+	cmp *0xff10, 0x0007
+	jeq &add7
+add0:
+	add currentTime, 1
+	jmp &endTimer
+add1:
+	add currentTime, 2
+	jmp &endTimer
+add2:
+	add currentTime, 3	
+	jmp &endTimer
+add3:
+	add currentTime, 4
+	jmp &endTimer
+add4:
+	add currentTime, 10
+	jmp &endTimer
+add5:
+	add currentTime, 20
+	jmp &endTimer
+add6:
+	add currentTime, 60
+	jmp &endTimer
+add7:
+	add currentTime, 120
+	jmp &endTimer
+endTimer:
+	iret
+	
+terminal:
+	push r2
+	mov keyPressed, 1
+	mov r2, dataIn
+	mov currentKey, r2[0]
+	pop r2
+	iret
+	
+getchar:  
+	push r2
+	mov r2, &loopGC
+loopGC:
+	cmp keyPressed, 0
+	jeq r2
+	mov keyPressed, 0
+	pop r2
+	ret
+	
+printstr:
+	push r2
+	push r3
+	mov r3, dataOut
+	mov r2, sp[6]
+printstrLoop:
+	cmp r2[0], 0
+	jeq &printstrEnd
+	mov r3[0], r2[0]
+	add r2, 2
+	jmp &printstrLoop
+printstrEnd:   
+	pop r3
+	pop r2
+	ret	
+
+
+.data
+currentTime:
+	.word 0x0000
+dataIn:
+	.word 0xff02
+dataOut:
+	.word 0xff00
+keyPressed:
+	.word 0x0000
+currentKey:
+	.word 0x0000
+errorMsg:
+	.word 69
+	.word 114
+	.word 114
+	.word 111
+	.word 114
+	.word 32
+	.word 119
+	.word 104
+	.word 105
+	.word 108
+	.word 101
+	.word 32
+	.word 101
+	.word 120
+	.word 101
+	.word 99
+	.word 117
+	.word 116
+	.word 105
+	.word 110
+	.word 103
+	.word 46
+	.word 32
+	.word 72
+	.word 97
+	.word 108
+	.word 116
+	.word 105
+	.word 110
+	.word 103
+	.word 46
+	.word 10
+	.word 0
+                      
+noAccessMsg:
+	.word 65
+	.word 99
+	.word 99
+	.word 101
+	.word 115
+	.word 115
+	.word 32
+	.word 110
+	.word 111
+	.word 116
+	.word 32
+	.word 97
+	.word 108
+	.word 108
+	.word 111
+	.word 119
+	.word 101
+	.word 100
+	.word 46
+	.word 32
+	.word 72
+	.word 97
+	.word 108
+	.word 116
+	.word 105
+	.word 110
+	.word 103
+	.word 46
+	.word 10
+	.word 0
+
+.end

@@ -1,0 +1,23 @@
+.global main
+.extern currentTime
+
+.text
+main:
+	or psw, 0x2000
+	mov *0xff10, 7
+	mov *0x0008, &newRoutine
+	mov r2, 4
+	int r2
+	mov r2, 2
+	int r2
+	mov r0, currentTime
+	mov r0, 10
+	ret
+	
+newRoutine:
+	push r0
+	mov r0, 33
+	mov r0, 10
+	pop r0
+	iret
+.end

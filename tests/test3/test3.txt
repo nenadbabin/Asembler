@@ -1,0 +1,24 @@
+.global main
+
+.extern dataOut
+
+.text
+main:
+	mov r2, dataOut
+	mov r2[0], 72
+	mov r2[0], 101
+	mov r2[0], 108
+	mov r2[0], 108
+	mov r2[0], 111
+	mov r2[0], 44
+	mov r2[0], 32
+	mov r2[0], 119
+	mov r2[0], 111
+	mov r2[0], 114
+	mov r2[0], 108
+	mov r2[0], 100
+	mov r2[0], 33
+	mov r2[0], 10
+	ret
+.end
+	

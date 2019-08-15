@@ -1,0 +1,28 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+          .text             29              2         1  0  1  1
+           .bss              8              4         1  1  0  0
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+           main          .text              0         GLOBAL              0
+           text          .text              0          LOCAL              1
+            bss           .bss              0          LOCAL              3
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+              3          .text            bss           .bss           R_16
+             26          .text            bss           .bss           R_16
+%END%
+
+%SECTIONS_CONTENT%
+.text
+24 22 00 00 00 24 42 00 
+01 00 24 62 02 00 02 00 
+24 62 04 00 03 00 24 62 
+06 a0 00 00 c4 
+.end
+
+%END%

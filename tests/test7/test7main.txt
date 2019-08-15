@@ -1,0 +1,19 @@
+.extern N
+.extern M
+.extern P
+.extern Q
+
+.global main
+
+.equ MY, 17
+
+.text
+main:
+	mov r0, N
+	mov r0, 10
+	mov r2, M
+	mov r3, P
+	mov r4, Q
+	mov r5, MY
+	ret
+.end

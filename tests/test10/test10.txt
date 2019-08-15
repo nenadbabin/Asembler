@@ -1,0 +1,16 @@
+.global main
+
+.text
+main:
+	mov r1, &bss
+	mov r1[0], 0x0001
+	mov r1[2], 0x0002
+	mov r1[4], 0x0003
+	mov r1[6], bss
+	ret
+
+.bss
+	.skip 4
+	.align 8
+	
+.end

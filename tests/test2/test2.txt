@@ -1,0 +1,16 @@
+.global main
+
+.data
+symbol:
+.word 0x0001
+.skip 2
+
+.text
+main:
+	mov r1, *0x0200
+	shl r1, $symbol
+	mov r1[symbol], r1
+	push r1
+	pop psw
+	ret
+.end

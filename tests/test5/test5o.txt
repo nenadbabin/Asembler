@@ -1,0 +1,31 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+          .text             59              3         1  0  1  1
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+           main          .text              0         GLOBAL              0
+    currentTime      undefined              0         GLOBAL              1
+     newRoutine          .text             44          LOCAL              2
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+             17          .text     newRoutine          .text           R_16
+             36          .text    currentTime    currentTime           R_16
+%END%
+
+%SECTIONS_CONTENT%
+.text
+64 3e 00 00 20 24 a0 10 
+ff 00 07 00 24 a0 08 00 
+00 2c 00 24 24 00 04 00 
+1c 24 24 24 00 02 00 1c 
+24 24 20 a0 00 00 24 20 
+00 0a 00 c4 8c 20 24 20 
+00 21 00 24 20 00 0a 00 
+94 20 cc 
+.end
+
+%END%

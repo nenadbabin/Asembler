@@ -1,0 +1,37 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+       .sekcija             41              2         1  0  1  1
+          .data              2              4         1  1  0  1
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+              N       absolute          65290          LOCAL              0
+           main       .sekcija              0         GLOBAL              0
+          label       .sekcija             15          LOCAL              1
+        address          .data              0          LOCAL              3
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+              3       .sekcija        address          .data           R_16
+              8       .sekcija          label       .sekcija           R_16
+             20       .sekcija        address          .data           R_16
+             28       .sekcija        address          .data           R_16
+%END%
+
+%SECTIONS_CONTENT%
+.sekcija
+24 26 a0 00 00 24 24 00 
+0f 00 24 22 00 0a ff 20 
+46 22 2c a0 00 00 00 01 
+00 24 26 a0 00 00 30 22 
+00 01 48 22 00 00 ac 24 
+c4 
+.end
+
+.data
+f0 00 
+.end
+
+%END%

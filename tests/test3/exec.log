@@ -1,0 +1,376 @@
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00e9
+psw 0001
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00ee
+psw 0000
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: call
+%Registers%
+r0 0000
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 0098
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 009d
+psw 0008
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0048
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00a2
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 0048
+
+Instruction: mov
+%Registers%
+r0 0065
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00a7
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 0065
+
+Instruction: mov
+%Registers%
+r0 006c
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00ac
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 006c
+
+Instruction: mov
+%Registers%
+r0 006c
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00b1
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 006c
+
+Instruction: mov
+%Registers%
+r0 006f
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00b6
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 006f
+
+Instruction: mov
+%Registers%
+r0 002c
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00bb
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 002c
+
+Instruction: mov
+%Registers%
+r0 0020
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00c0
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 0020
+
+Instruction: mov
+%Registers%
+r0 0077
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00c5
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 0077
+
+Instruction: mov
+%Registers%
+r0 006f
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00ca
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 006f
+
+Instruction: mov
+%Registers%
+r0 0072
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00cf
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 0072
+
+Instruction: mov
+%Registers%
+r0 006c
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00d4
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 006c
+
+Instruction: mov
+%Registers%
+r0 0064
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00d9
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 0064
+
+Instruction: mov
+%Registers%
+r0 0021
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00de
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 0021
+
+Instruction: mov
+%Registers%
+r0 000a
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00e3
+psw 0000
+
+%Stack%
+00
+f0
+
+%Changed values in memory%
+MEM16[ff00] = 000a
+
+Instruction: ret
+%Registers%
+r0 000a
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00f0
+psw 0000
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: halt
+%Registers%
+r0 000a
+r1 0000
+r2 ff00
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00f1
+psw 0000
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+

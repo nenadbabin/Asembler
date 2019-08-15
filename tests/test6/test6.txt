@@ -1,0 +1,9 @@
+.global main
+
+.text
+main:
+	mov r1, 2
+	mov r2, 0
+	div r1, r2
+	ret
+.end

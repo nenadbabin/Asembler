@@ -1,0 +1,159 @@
+.text 98
+24 22 00 02 00 24 24 00 
+00 00 44 22 24 c4 24 3e 
+00 00 00 24 24 00 98 00 
+bc 24 0c 4c 6c 04 00 01 
+00 a4 00 c7 00 4c 6c 04 
+00 02 00 a4 00 cf 00 8c 
+00 5c 00 9c 00 d7 00 8c 
+00 1a 00 9c 00 d7 00 24 
+26 00 c0 01 bc 26 0c 4c 
+a0 10 ff 00 00 00 a4 00 
+37 01 4c a0 10 ff 00 01 
+00 a4 00 42 01 4c a0 10 
+ff 00 02 00 a4 00 4d 01 
+4c a0 10 ff 00 03 00 a4 
+00 58 01 4c a0 10 ff 00 
+04 00 a4 00 63 01 4c a0 
+10 ff 00 05 00 a4 00 6e 
+01 4c a0 10 ff 00 06 00 
+a4 00 79 01 4c a0 10 ff 
+00 07 00 a4 00 84 01 2c 
+a0 10 00 00 01 00 9c 00 
+8f 01 2c a0 10 00 00 02 
+00 9c 00 8f 01 2c a0 10 
+00 00 03 00 9c 00 8f 01 
+2c a0 10 00 00 04 00 9c 
+00 8f 01 2c a0 10 00 00 
+0a 00 9c 00 8f 01 2c a0 
+10 00 00 14 00 9c 00 8f 
+01 2c a0 10 00 00 3c 00 
+9c 00 8f 01 2c a0 10 00 
+00 78 00 9c 00 8f 01 cc 
+8c 24 24 a0 16 00 00 01 
+00 24 24 a0 12 00 24 a0 
+18 00 44 94 24 cc 8c 24 
+24 24 00 ad 01 4c a0 16 
+00 00 00 00 a4 24 24 a0 
+16 00 00 00 00 94 24 c4 
+8c 24 8c 26 24 26 a0 14 
+00 24 24 6c 06 4c 44 00 
+00 00 a4 00 e2 01 24 46 
+44 2c 24 00 02 00 9c 00 
+cd 01 94 26 94 24 c4 
+
+.ivTable 0
+a6 00 b3 00 df 00 90 01 
+00 00 00 00 00 00 00 00 
+
+.data 10
+00 00 02 ff 00 ff 00 00 
+00 00 45 00 72 00 72 00 
+6f 00 72 00 20 00 77 00 
+68 00 69 00 6c 00 65 00 
+20 00 65 00 78 00 65 00 
+63 00 75 00 74 00 69 00 
+6e 00 67 00 2e 00 20 00 
+48 00 61 00 6c 00 74 00 
+69 00 6e 00 67 00 2e 00 
+0a 00 00 00 41 00 63 00 
+63 00 65 00 73 00 73 00 
+20 00 6e 00 6f 00 74 00 
+20 00 61 00 6c 00 6c 00 
+6f 00 77 00 65 00 64 00 
+2e 00 20 00 48 00 61 00 
+6c 00 74 00 69 00 6e 00 
+67 00 2e 00 0a 00 00 00 
+
+
+int1testo.txt .text 98
+stdo.txt .ivTable 0
+stdo.txt .text a6
+stdo.txt .data 10
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+int1testo.txt
+           main          .text             98         GLOBAL              0
+stdo.txt
+         _start          .text             a6         GLOBAL              0
+          error          .text             b3         GLOBAL              1
+          timer          .text             df         GLOBAL              2
+       terminal          .text            190         GLOBAL              3
+        getchar          .text            1a6         GLOBAL              4
+    currentTime          .data             10         GLOBAL              5
+         dataIn          .data             12         GLOBAL              6
+        dataOut          .data             14         GLOBAL              7
+       printstr          .text            1c0         GLOBAL              8
+         error1          .text             c7          LOCAL              b
+         error2          .text             cf          LOCAL              c
+     printError          .text             d7          LOCAL              d
+           add0          .text            137          LOCAL              e
+           add1          .text            142          LOCAL              f
+           add2          .text            14d          LOCAL             10
+           add3          .text            158          LOCAL             11
+           add4          .text            163          LOCAL             12
+           add5          .text            16e          LOCAL             13
+           add6          .text            179          LOCAL             14
+           add7          .text            184          LOCAL             15
+       endTimer          .text            18f          LOCAL             16
+         loopGC          .text            1ad          LOCAL             17
+   printstrLoop          .text            1cd          LOCAL             18
+    printstrEnd          .text            1e2          LOCAL             19
+     keyPressed          .data             16          LOCAL             1b
+     currentKey          .data             18          LOCAL             1c
+       errorMsg          .data             1a          LOCAL             1d
+    noAccessMsg          .data             5c          LOCAL             1e
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+int1testo.txt
+stdo.txt
+              0       .ivTable         _start         _start           R_16
+              2       .ivTable          error          error           R_16
+              4       .ivTable          timer          timer           R_16
+              6       .ivTable       terminal       terminal           R_16
+             ae          .text           main           main           R_16
+             bb          .text         error1          .text           R_16
+             c5          .text         error2          .text           R_16
+             c9          .text    noAccessMsg          .data           R_16
+             cd          .text     printError          .text           R_16
+             d1          .text       errorMsg          .data           R_16
+             d5          .text     printError          .text           R_16
+             da          .text       printstr       printstr           R_16
+             e8          .text           add0          .text           R_16
+             f3          .text           add1          .text           R_16
+             fe          .text           add2          .text           R_16
+            109          .text           add3          .text           R_16
+            114          .text           add4          .text           R_16
+            11f          .text           add5          .text           R_16
+            12a          .text           add6          .text           R_16
+            135          .text           add7          .text           R_16
+            139          .text    currentTime    currentTime           R_16
+            140          .text       endTimer          .text           R_16
+            144          .text    currentTime    currentTime           R_16
+            14b          .text       endTimer          .text           R_16
+            14f          .text    currentTime    currentTime           R_16
+            156          .text       endTimer          .text           R_16
+            15a          .text    currentTime    currentTime           R_16
+            161          .text       endTimer          .text           R_16
+            165          .text    currentTime    currentTime           R_16
+            16c          .text       endTimer          .text           R_16
+            170          .text    currentTime    currentTime           R_16
+            177          .text       endTimer          .text           R_16
+            17b          .text    currentTime    currentTime           R_16
+            182          .text       endTimer          .text           R_16
+            186          .text    currentTime    currentTime           R_16
+            18d          .text       endTimer          .text           R_16
+            194          .text     keyPressed          .data           R_16
+            19c          .text         dataIn         dataIn           R_16
+            1a0          .text     currentKey          .data           R_16
+            1ab          .text         loopGC          .text           R_16
+            1af          .text     keyPressed          .data           R_16
+            1b8          .text     keyPressed          .data           R_16
+            1c7          .text        dataOut        dataOut           R_16
+            1d4          .text    printstrEnd          .text           R_16
+            1e0          .text   printstrLoop          .text           R_16
+%END%
+

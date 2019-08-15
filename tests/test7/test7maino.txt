@@ -1,0 +1,32 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+          .text             31              5         1  0  1  1
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+              N      undefined              0         GLOBAL              0
+              M      undefined              0         GLOBAL              1
+              P      undefined              0         GLOBAL              2
+              Q      undefined              0         GLOBAL              3
+           main          .text              0         GLOBAL              4
+             MY       absolute             17          LOCAL              5
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+              3          .text              N              N           R_16
+             13          .text              M              M           R_16
+             18          .text              P              P           R_16
+             23          .text              Q              Q           R_16
+%END%
+
+%SECTIONS_CONTENT%
+.text
+24 20 a0 00 00 24 20 00 
+0a 00 24 24 a0 00 00 24 
+26 a0 00 00 24 28 a0 00 
+00 24 2a 00 11 00 c4 
+.end
+
+%END%

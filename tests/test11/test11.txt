@@ -1,0 +1,21 @@
+.global main
+
+.text
+main:	
+	not $dat
+	jmp &lab
+	ret
+
+.section akaText "ERP"
+lab:
+	mov r1, -32768
+	mov r2, -2
+	xchg r1, r2
+	notb r2l
+	add r1, r2
+	ret
+	
+.section akaData "RWP"
+dat:
+	.skip 2
+.end

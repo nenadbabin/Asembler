@@ -1,0 +1,31 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+          .text             76              2         1  0  1  1
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+           main          .text              0         GLOBAL              0
+        dataOut      undefined              0         GLOBAL              1
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+              3          .text        dataOut        dataOut           R_16
+%END%
+
+%SECTIONS_CONTENT%
+.text
+24 24 a0 00 00 24 44 00 
+48 00 24 44 00 65 00 24 
+44 00 6c 00 24 44 00 6c 
+00 24 44 00 6f 00 24 44 
+00 2c 00 24 44 00 20 00 
+24 44 00 77 00 24 44 00 
+6f 00 24 44 00 72 00 24 
+44 00 6c 00 24 44 00 64 
+00 24 44 00 21 00 24 44 
+00 0a 00 c4 
+.end
+
+%END%

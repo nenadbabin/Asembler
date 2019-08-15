@@ -1,0 +1,40 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+          .text              9              2         1  0  1  1
+       .akaText             19              5         1  0  1  1
+       .akaData              2              8         1  1  0  1
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+           text          .text              0          LOCAL              0
+           main          .text              0         GLOBAL              1
+        akaText       .akaText              0          LOCAL              3
+            lab       .akaText              0          LOCAL              4
+        akaData       .akaData              0          LOCAL              6
+            dat       .akaData              0          LOCAL              7
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+              2          .text            dat       .akaData         R_PC16
+              6          .text            lab       .akaText           R_16
+%END%
+
+%SECTIONS_CONTENT%
+.text
+54 8e fe ff 9c 00 00 00 
+c4 
+.end
+
+.akaText
+24 22 00 00 80 24 24 00 
+fe ff 14 22 24 50 24 2c 
+22 24 c4 
+.end
+
+.akaData
+00 00 
+.end
+
+%END%

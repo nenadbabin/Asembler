@@ -1,0 +1,30 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+          .data              4              2         1  1  0  1
+          .text             20              3         1  0  1  1
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+           main          .text              0         GLOBAL              0
+         symbol          .data              0          LOCAL              1
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+              8          .text         symbol          .data         R_PC16
+             12          .text         symbol          .data           R_16
+%END%
+
+%SECTIONS_CONTENT%
+.data
+01 00 00 00 
+.end
+
+.text
+24 22 a0 00 02 7c 22 8e 
+fe ff 24 82 00 00 22 8c 
+22 94 3e c4 
+.end
+
+%END%

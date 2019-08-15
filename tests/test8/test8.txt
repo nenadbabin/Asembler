@@ -1,0 +1,16 @@
+.global main
+
+.text
+main:
+	mov r2, &myProg
+	jmp r2
+	ret
+
+.data
+myProg:
+	.byte 0x0024
+	.byte 0x0020
+	.byte 0x0000
+	.word 0x0045
+	.byte 0x00c4
+.end

@@ -1,0 +1,224 @@
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00a6
+psw 0001
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00ab
+psw 0000
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: call
+%Registers%
+r0 0000
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 0098
+psw 0000
+
+%Stack%
+00
+ad
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: not
+%Registers%
+r0 0000
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 009c
+psw 0008
+
+%Stack%
+00
+ad
+
+%Changed values in memory%
+MEM16[01f5] = ffff
+
+Instruction: jmp
+%Registers%
+r0 0000
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 01e2
+psw 0008
+
+%Stack%
+00
+ad
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 8000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 01e7
+psw 0008
+
+%Stack%
+00
+ad
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 8000
+r2 fffe
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 01ec
+psw 0008
+
+%Stack%
+00
+ad
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: xchg
+%Registers%
+r0 0000
+r1 fffe
+r2 8000
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 01ef
+psw 0008
+
+%Stack%
+00
+ad
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: not
+%Registers%
+r0 0000
+r1 fffe
+r2 80ff
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 01f1
+psw 0008
+
+%Stack%
+00
+ad
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: add
+%Registers%
+r0 0000
+r1 80fd
+r2 80ff
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 01f4
+psw 0008
+
+%Stack%
+00
+ad
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: ret
+%Registers%
+r0 0000
+r1 80fd
+r2 80ff
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00ad
+psw 0008
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: halt
+%Registers%
+r0 0000
+r1 80fd
+r2 80ff
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00ae
+psw 0008
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+

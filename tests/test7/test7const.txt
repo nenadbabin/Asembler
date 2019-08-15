@@ -1,0 +1,11 @@
+.equ N, 67
+.equ M, 0x1234
+.equ P, -1
+.equ Q, 0xfff0
+
+.global N
+.global M
+.global P
+.global Q
+
+.end

@@ -1,0 +1,205 @@
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00bc
+psw 0001
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00c1
+psw 0000
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: call
+%Registers%
+r0 0000
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 0098
+psw 0000
+
+%Stack%
+00
+c3
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0043
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 009d
+psw 0000
+
+%Stack%
+00
+c3
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 000a
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00a2
+psw 0000
+
+%Stack%
+00
+c3
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 000a
+r1 0000
+r2 1234
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00a7
+psw 0000
+
+%Stack%
+00
+c3
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 000a
+r1 0000
+r2 1234
+r3 ffff
+r4 0000
+r5 0000
+r6 fefe
+r7 00ac
+psw 0008
+
+%Stack%
+00
+c3
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 000a
+r1 0000
+r2 1234
+r3 ffff
+r4 fff0
+r5 0000
+r6 fefe
+r7 00b1
+psw 0008
+
+%Stack%
+00
+c3
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 000a
+r1 0000
+r2 1234
+r3 ffff
+r4 fff0
+r5 0011
+r6 fefe
+r7 00b6
+psw 0000
+
+%Stack%
+00
+c3
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: ret
+%Registers%
+r0 000a
+r1 0000
+r2 1234
+r3 ffff
+r4 fff0
+r5 0011
+r6 ff00
+r7 00c3
+psw 0000
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: halt
+%Registers%
+r0 000a
+r1 0000
+r2 1234
+r3 ffff
+r4 fff0
+r5 0011
+r6 ff00
+r7 00c4
+psw 0000
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+

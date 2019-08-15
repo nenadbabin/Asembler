@@ -1,0 +1,27 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+          .text              8              1         1  0  1  1
+          .data              6              3         1  1  0  1
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+           main          .text              0         GLOBAL              0
+         myProg          .data              0          LOCAL              2
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+              3          .text         myProg          .data           R_16
+%END%
+
+%SECTIONS_CONTENT%
+.text
+24 24 00 00 00 9c 24 c4 
+.end
+
+.data
+24 20 00 45 00 c4 
+.end
+
+%END%

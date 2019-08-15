@@ -1,0 +1,188 @@
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 007d
+psw 0001
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 0064
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 0082
+psw 0000
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: call
+%Registers%
+r0 0000
+r1 0000
+r2 0064
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 0064
+psw 0000
+
+%Stack%
+00
+84
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0001
+r2 0064
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 0069
+psw 0000
+
+%Stack%
+00
+84
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: shl
+%Registers%
+r0 0000
+r1 0002
+r2 0064
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 006e
+psw 0000
+
+%Stack%
+00
+84
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0002
+r2 0064
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 0073
+psw 0000
+
+%Stack%
+00
+84
+
+%Changed values in memory%
+MEM16[0202] = 0002
+
+Instruction: push
+%Registers%
+r0 0000
+r1 0002
+r2 0064
+r3 0000
+r4 0000
+r5 0000
+r6 fefc
+r7 0075
+psw 0000
+
+%Stack%
+00
+84
+00
+02
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: pop
+%Registers%
+r0 0000
+r1 0002
+r2 0064
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 0077
+psw 0002
+
+%Stack%
+00
+84
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: ret
+%Registers%
+r0 0000
+r1 0002
+r2 0064
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 0084
+psw 0002
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: halt
+%Registers%
+r0 0000
+r1 0002
+r2 0064
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 0085
+psw 0002
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
