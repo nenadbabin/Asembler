@@ -241,42 +241,10 @@ int Pass::getOperandSize(string s1, int expectedSizeOfOperands) {
 
 	// ovde moze da se ispita dalje da li je sve ok (npr. immed je 2B, a operadni su 1B)
 	if (type == "immedDec" || type == "immedHex") {
-
-		if (regex_search(s, tokenParsers[OPERAND_DEC])
-				|| regex_search(s, tokenParsers[OPERAND_HEX])) {
-			int num = stringToInt(s);
-
-			if (num > 0x00ff) {
-				if (num > 0x0000ffff) {
-					throw runtime_error("Value too big.");
-				} else {
-					return 2;
-				}
-			} else {
-
-				if (expectedSizeOfOperands == 2) {
-					return 2;
-				}
-
-				return 1;
-			}
+		if (expectedSizeOfOperands == 2) {
+			return 2;
 		} else {
-			int num = hexStringToInt(s);
-
-			if (num > 0x00ff) {
-				if (num > 0x0000ffff) {
-					throw runtime_error("Value too big.");
-				} else {
-					return 2;
-				}
-			} else {
-
-				if (expectedSizeOfOperands == 2) {
-					return 2;
-				}
-
-				return 1;
-			}
+			return 1;
 		}
 	}
 
@@ -346,10 +314,10 @@ void Pass::getTokens(ifstream &inputFile) {
 	while (getline(inputFile, line)) {
 
 		//strip comments
-		size_t found = line.find(';');
+		/*size_t found = line.find(';');
 		if (found != string::npos) {
 			line = line.substr(0, found);
-		}
+		}*/
 
 		vector<string> tokens;
 		split(line, " ,\t\n", tokens);

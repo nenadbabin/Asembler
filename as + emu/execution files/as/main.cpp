@@ -43,6 +43,8 @@ int main(int argc, char ** argv) {
 	secondPass->begin(stringFileName);
 	secondPass->writeObjectFile(outputFile);
 
+
+	cout << "Success" << endl;
 	return 0;
 }
 

@@ -102,7 +102,7 @@ private:
 	bool notifyInterrupt(int i);
 	void interruptHandler();
 
-	recursive_mutex mtx;
+	recursive_mutex mutex;
 
 	bool writeToFile;
 

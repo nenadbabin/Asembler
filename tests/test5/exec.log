@@ -53,25 +53,6 @@ df
 %Changed values in memory%
 There were no changes in memory.
 
-Instruction: or
-%Registers%
-r0 0000
-r1 0000
-r2 0098
-r3 0000
-r4 0000
-r5 0000
-r6 fefe
-r7 009d
-psw 0001
-
-%Stack%
-00
-df
-
-%Changed values in memory%
-There were no changes in memory.
-
 Instruction: mov
 %Registers%
 r0 0000
@@ -81,7 +62,7 @@ r3 0000
 r4 0000
 r5 0000
 r6 fefe
-r7 00a4
+r7 009f
 psw 0000
 
 %Stack%
@@ -100,7 +81,7 @@ r3 0000
 r4 0000
 r5 0000
 r6 fefe
-r7 00ab
+r7 00a6
 psw 0000
 
 %Stack%
@@ -108,7 +89,7 @@ psw 0000
 df
 
 %Changed values in memory%
-MEM16[0008] = 00c4
+MEM16[0008] = 00bf
 
 Instruction: mov
 %Registers%
@@ -119,7 +100,7 @@ r3 0000
 r4 0000
 r5 0000
 r6 fefe
-r7 00b0
+r7 00ab
 psw 0000
 
 %Stack%
@@ -138,7 +119,7 @@ r3 0000
 r4 0000
 r5 0000
 r6 fefe
-r7 00b2
+r7 00ad
 psw 0000
 
 %Stack%
@@ -157,14 +138,39 @@ r3 0000
 r4 0000
 r5 0000
 r6 fef8
-r7 00c6
-psw 0000
+r7 00c1
+psw 8000
 
 %Stack%
 00
 df
 00
-b2
+ad
+00
+00
+00
+00
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: and
+%Registers%
+r0 0000
+r1 0000
+r2 0004
+r3 0000
+r4 0000
+r5 0000
+r6 fef8
+r7 00c6
+psw 0001
+
+%Stack%
+00
+df
+00
+ad
 00
 00
 00
@@ -189,7 +195,7 @@ psw 0000
 00
 df
 00
-b2
+ad
 00
 00
 00
@@ -214,7 +220,7 @@ psw 0000
 00
 df
 00
-b2
+ad
 00
 00
 00
@@ -239,7 +245,7 @@ psw 0000
 00
 df
 00
-b2
+ad
 00
 00
 
@@ -255,7 +261,7 @@ r3 0000
 r4 0000
 r5 0000
 r6 fefe
-r7 00b2
+r7 00ad
 psw 0000
 
 %Stack%
@@ -274,7 +280,7 @@ r3 0000
 r4 0000
 r5 0000
 r6 fefe
-r7 00b7
+r7 00b2
 psw 0000
 
 %Stack%
@@ -293,7 +299,7 @@ r3 0000
 r4 0000
 r5 0000
 r6 fefe
-r7 00b9
+r7 00b4
 psw 0000
 
 %Stack%
@@ -313,13 +319,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 0113
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -336,13 +342,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 0117
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -359,13 +365,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 011e
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -382,13 +388,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 0122
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -405,13 +411,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 0129
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -428,13 +434,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 012d
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -451,13 +457,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 0134
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -474,13 +480,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 0138
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -497,13 +503,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 013f
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -520,13 +526,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 0143
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -543,13 +549,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 014a
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -566,13 +572,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 014e
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -589,13 +595,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 0155
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -612,13 +618,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 0159
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -635,13 +641,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 0160
-psw 0001
+psw 8001
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -658,13 +664,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 01b1
-psw 0001
+psw 8001
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -681,13 +687,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 01b8
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -704,13 +710,13 @@ r4 0000
 r5 0000
 r6 fefa
 r7 01bc
-psw 0000
+psw 8000
 
 %Stack%
 00
 df
 00
-b9
+b4
 00
 00
 
@@ -726,7 +732,7 @@ r3 0000
 r4 0000
 r5 0000
 r6 fefe
-r7 00b9
+r7 00b4
 psw 0000
 
 %Stack%
@@ -745,7 +751,7 @@ r3 0000
 r4 0000
 r5 0000
 r6 fefe
-r7 00be
+r7 00b9
 psw 0000
 
 %Stack%
@@ -764,7 +770,7 @@ r3 0000
 r4 0000
 r5 0000
 r6 fefe
-r7 00c3
+r7 00be
 psw 0000
 
 %Stack%

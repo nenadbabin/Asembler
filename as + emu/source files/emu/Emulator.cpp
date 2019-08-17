@@ -64,18 +64,18 @@ void Emulator::start() {
 
 	cout << "EMU START!" << endl;
 	while (processorON) {
-		lock_guard<recursive_mutex> lck(mtx);
+		mutex.lock();
 		Instruction * i = fetchInstruction();
 		//cout << "CODE: " << dec << (unsigned)i->getOpCode() << endl;
 		if (i != nullptr) {
 			executeInstruction(i);
 		}
-
 		if (writeToFile && (i != nullptr)) {
 			printEmulatorState(file, i);
 		}
 
 		interruptHandler();
+		mutex.unlock();
 	}
 
 	timer.detach();
@@ -772,12 +772,7 @@ bool Emulator::intExecutor(Instruction * instr) {
 
 	uint16_t dst = getFirstOperand(instr);
 
-	if (dst > 0x0007) {
-		callInterrupt(1, 2);
-		return false;
-	}
-
-	notifyInterrupt(dst);
+	notifyInterrupt(dst % 8);
 	return true;
 }
 
@@ -1274,49 +1269,50 @@ void Emulator::timerInterrupt(Emulator * e) {
 
 	while (processorON) {
 
-		uint16_t PSW = e->readFromRegister(PSW_REGISTER, true, false);
+		//uint16_t PSW = e->readFromRegister(PSW_REGISTER, true, false);
 
 		//if ((PSW & ((uint16_t) 1 << 13)) == 0) { // mask = 00100...
-			u_int16_t value;
-			e->getMemory()->readWord(TIMER_CFG, value);
-			int milis = 0;
-			switch (value) {
-			case 0: {
-				milis = 500;
-				break;
-			}
-			case 1: {
-				milis = 1000;
-				break;
-			}
-			case 2: {
-				milis = 1500;
-				break;
-			}
-			case 3: {
-				milis = 2000;
-				break;
-			}
-			case 4: {
-				milis = 5000;
-				break;
-			}
-			case 5: {
-				milis = 10000;
-				break;
-			}
-			case 6: {
-				milis = 30000;
-				break;
-			}
-			case 7: {
-				milis = 60000;
-				break;
-			}
-			}
+		u_int16_t value;
+		e->getMemory()->readWord(TIMER_CFG, value);
+		int milis = 0;
+		switch (value) {
+		case 0: {
+			milis = 500;
+			break;
+		}
+		case 1: {
+			milis = 1000;
+			break;
+		}
+		case 2: {
+			milis = 1500;
+			break;
+		}
+		case 3: {
+			milis = 2000;
+			break;
+		}
+		case 4: {
+			milis = 5000;
+			break;
+		}
+		case 5: {
+			milis = 10000;
+			break;
+		}
+		case 6: {
+			milis = 30000;
+			break;
+		}
+		case 7: {
+			milis = 60000;
+			break;
+		}
+		}
 
-			this_thread::sleep_for(chrono::milliseconds(milis));
-			e->notifyInterrupt(2);
+		this_thread::sleep_for(chrono::milliseconds(milis));
+		e->notifyInterrupt(2);
+		//cout << "TIMER!" << endl;;
 		//}
 	}
 }
@@ -1348,7 +1344,7 @@ bool Emulator::interrupt(uint8_t id) {
 
 	push(PC);
 	push(PSW);
-	PSW &= (1 << 15);
+	PSW |= ((uint16_t) 1 << 15);
 	writeToRegister(PSW_REGISTER, true, false, PSW);
 	uint16_t addressToJmp;
 	memory->readWord(id * 2, addressToJmp);
@@ -1363,40 +1359,44 @@ bool Emulator::interrupt(uint8_t id) {
 }
 
 bool Emulator::notifyInterrupt(int i) {
-	lock_guard<recursive_mutex> lck(mtx);
+	mutex.lock();
 	if (i > 15)
 		return false;
 	bool old = interruptSignals[i];
 	interruptSignals[i] = true;
 
 	if (old) {
+		mutex.unlock();
 		return false;
 	} else {
+		mutex.unlock();
 		return true;
 	}
 }
 
 void Emulator::interruptHandler() {
-	lock_guard<recursive_mutex> lck(mtx);
+	//lock_guard<recursive_mutex> lck(mutex);
+	mutex.lock();
 	uint16_t PSW = readFromRegister(PSW_REGISTER, true, false);
 
 	if ((PSW & ((uint16_t) 1 << 15)) == 0) {
 		for (int i = 0; i < 8; i++) {
 			if (interruptSignals[i]) {
-				if ((i == 2 && (PSW & ((uint16_t) 1 << 14)) == 0)
-						|| (i == 3 && (PSW & ((uint16_t) 1 << 13)) == 0)
+				if ((i == 2 && (PSW & ((uint16_t) 1 << 13)) == 0)
+						|| (i == 3 && (PSW & ((uint16_t) 1 << 14)) == 0)
 						|| (i != 2 && i != 3)) {
 					if (interrupt(i)) {
 						interruptSignals[i] = false;
-						/*if (i == 1) {
-						 cout << "TIMER!" << endl;
-						 }*/
+						/*if (i == 2) {
+							cout << "TIMER!" << endl;
+						}*/
 						break;
 					}
 				}
 			}
 		}
 	}
+	mutex.unlock();
 }
 
 void Emulator::keyboardReader(Emulator * e) {
@@ -1404,22 +1404,22 @@ void Emulator::keyboardReader(Emulator * e) {
 		//uint16_t PSW = e->readFromRegister(PSW_REGISTER, true, false);
 
 		//if ((PSW & ((uint16_t) 1 << 14)) == 0) { // mask = 01000...
-			int val = getchar();
-			if (val == EOF)
-				break;
+		int val = getchar();
+		if (val == EOF)
+			break;
 
-			e->mtx.lock();
-			while (!e->notifyInterrupt(3)) {
-				e->mtx.unlock();
-				this_thread::sleep_for(chrono::milliseconds(100));
-				e->mtx.lock();
-			}
-
-			e->getMemory()->writeWord(DATA_IN, val);
-			e->notifyInterrupt(3);
-			e->mtx.unlock();
+		e->mutex.lock();
+		while (!e->notifyInterrupt(3)) {
+			e->mutex.unlock();
 			this_thread::sleep_for(chrono::milliseconds(100));
-			//cout << "READER!" << endl;
+			e->mutex.lock();
+		}
+
+		e->getMemory()->writeWord(DATA_IN, val);
+		e->notifyInterrupt(3);
+		e->mutex.unlock();
+		this_thread::sleep_for(chrono::milliseconds(100));
+		//cout << "READER!" << endl;
 		//}
 	}
 }

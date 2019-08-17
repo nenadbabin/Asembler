@@ -75,7 +75,7 @@ stdo.txt .data 10
 
 %SYMBOLS%
            NAME        SECTION          VALUE          SCOPE         NUMBER
-test7consto.txt
+test7cosnto.txt
               N       absolute             43         GLOBAL              0
               M       absolute           1234         GLOBAL              0
               P       absolute           ffff         GLOBAL              0
@@ -120,7 +120,7 @@ stdo.txt
 
 %RELOCATIONS%
          OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
-test7consto.txt
+test7cosnto.txt
 test7maino.txt
              9b          .text              N              N           R_16
              a5          .text              M              M           R_16

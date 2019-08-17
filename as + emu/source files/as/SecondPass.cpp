@@ -238,7 +238,7 @@ void SecondPass::handleDirective(string dirName, queue<string> * tokens) {
 					s->writeTo(&imDiAd, Pass::getLocationCounter(), 2);
 					Pass::incLocationCounter(2);
 
-				} else if (symbolObject->getSection() != "undefined") { // mem dir; section exists
+				} else { // mem dir; section exists
 					Relocation * relocationObject = new Relocation(symbolObject,
 							RelocationType::R_16, Pass::getLocationCounter(),
 							s);
@@ -250,16 +250,6 @@ void SecondPass::handleDirective(string dirName, queue<string> * tokens) {
 					} else {
 						imDiAd = symbolObject->getValue();
 					}
-					s->writeTo(&imDiAd, Pass::getLocationCounter(), 2);
-					Pass::incLocationCounter(2);
-
-				} else if (symbolObject->getSection() == "undefined") { // undefined symbol; same as immed; NEEEE! mem dir, pa linker da prepravi
-					Relocation * relocationObject = new Relocation(symbolObject,
-							RelocationType::R_16, Pass::getLocationCounter(),
-							s);
-					Pass::addRelocation(relocationObject);
-
-					u_int16_t imDiAd(symbolObject->getValue());
 					s->writeTo(&imDiAd, Pass::getLocationCounter(), 2);
 					Pass::incLocationCounter(2);
 				}
@@ -643,14 +633,26 @@ void SecondPass::handleOperandOfInstruction(string firstOperand, string srcDst,
 			throw runtime_error("Expected " + symbolName + " to be declared.");
 		}
 
-		Relocation * relocationObject = new Relocation(symbolObject,
-				RelocationType::R_16, Pass::getLocationCounter(), s);
-		Pass::addRelocation(relocationObject);
+		if (symbolObject->getSection() == "absolute") { //immed
+			// no need for reloaction
+			u_int16_t imDiAd(symbolObject->getValue());
+			s->writeTo(&imDiAd, Pass::getLocationCounter(), 2);
+			Pass::incLocationCounter(2);
 
-		//write to file
-		u_int16_t imDiAd(symbolObject->getValue());
-		s->writeTo(&imDiAd, Pass::getLocationCounter(), 2);
-		Pass::incLocationCounter(2);
+		} else { // section exists or undefined
+			Relocation * relocationObject = new Relocation(symbolObject,
+					RelocationType::R_16, Pass::getLocationCounter(), s);
+			Pass::addRelocation(relocationObject);
+
+			u_int16_t imDiAd;
+			if (symbolObject->getScope() == ScopeType::GLOBAL) {
+				imDiAd = 0;
+			} else {
+				imDiAd = symbolObject->getValue();
+			}
+			s->writeTo(&imDiAd, Pass::getLocationCounter(), 2);
+			Pass::incLocationCounter(2);
+		}
 
 	} else if (firstOperandType == "memDirDec"
 			|| firstOperandType == "memDirHex") {
@@ -812,8 +814,8 @@ void SecondPass::handlePCRel(string firstOperand, int expectedSizeOfOperands,
 	u_int8_t firstOpByte(0);
 //cout << hex << (unsigned) instrByte << endl;
 
-	firstOpByte = firstOpByte | ((u_int8_t) 4 << 5); // red ind 16 bit offset
-	firstOpByte = firstOpByte | ((u_int8_t) 7 << 1); // register r7 = pc
+	firstOpByte = firstOpByte | ((u_int8_t) 4 << 5);	// red ind 16 bit offset
+	firstOpByte = firstOpByte | ((u_int8_t) 7 << 1);		// register r7 = pc
 	s->writeTo(&firstOpByte, Pass::getLocationCounter(), 1);
 	Pass::incLocationCounter(1);
 
@@ -864,9 +866,8 @@ void SecondPass::handlePCRel(string firstOperand, int expectedSizeOfOperands,
 		Pass::addRelocation(relocationObject);
 
 		// ugradjuje se pomeraj do sledece istrukcije
-		u_int16_t imDiAd(
-				Pass::getLocationCounter()
-						- (instructionStart + instructionSize));
+		u_int16_t imDiAd(Pass::getLocationCounter() // == 0
+		- (instructionStart + instructionSize));
 		s->writeTo(&imDiAd, Pass::getLocationCounter(), 2);
 		Pass::incLocationCounter(2);
 	}

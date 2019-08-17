@@ -3,7 +3,6 @@
 
 .text
 main:
-	or psw, 0x2000
 	mov *0xff10, 7
 	mov *0x0008, &newRoutine
 	mov r2, 4
@@ -16,6 +15,7 @@ main:
 	
 newRoutine:
 	push r0
+	and psw 0x7fff
 	mov r0, 33
 	mov r0, 10
 	pop r0
