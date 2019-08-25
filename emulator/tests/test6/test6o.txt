@@ -1,0 +1,22 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+          .text             14              2         1  0  1  1
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+           text          .text              0          LOCAL              0
+           main          .text              0         GLOBAL              1
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+%END%
+
+%SECTIONS_CONTENT%
+.text
+24 22 00 02 00 24 24 00 
+00 00 44 22 24 c4 
+.end
+
+%END%

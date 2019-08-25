@@ -1,0 +1,5914 @@
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00ab
+psw 0001
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 ff00
+r7 00b0
+psw 0000
+
+%Stack%
+There's nothing on stack.
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: call
+%Registers%
+r0 0000
+r1 0000
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 0098
+psw 0000
+
+%Stack%
+00
+b2
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0002
+r2 0098
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 009d
+psw 0000
+
+%Stack%
+00
+b2
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 fefe
+r7 00a2
+psw 0001
+
+%Stack%
+00
+b2
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: div
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 fefc
+r7 00a5
+psw 0001
+
+%Stack%
+00
+b2
+00
+02
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 fef8
+r7 00b9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 fef8
+r7 00bd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 fef8
+r7 00c3
+psw 8001
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 fef8
+r7 00cf
+psw 8001
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: push
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 fef6
+r7 00d3
+psw 8001
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 0000
+r4 0000
+r5 0000
+r6 fef6
+r7 00d7
+psw 8001
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 01c0
+r4 0000
+r5 0000
+r6 fef6
+r7 00dc
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: call
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 01c0
+r4 0000
+r5 0000
+r6 fef4
+r7 01c0
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: push
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 01c0
+r4 0000
+r5 0000
+r6 fef2
+r7 01c2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: push
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 01c0
+r4 0000
+r5 0000
+r6 fef0
+r7 01c4
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0002
+r2 0000
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01c9
+psw 8008
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0000
+r1 0002
+r2 001a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0000
+r1 0002
+r2 001a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0000
+r1 0002
+r2 001a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0045
+r1 0002
+r2 001a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0045
+
+Instruction: add
+%Registers%
+r0 0045
+r1 0002
+r2 001c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0045
+r1 0002
+r2 001c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0045
+r1 0002
+r2 001c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0045
+r1 0002
+r2 001c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0072
+r1 0002
+r2 001c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0072
+
+Instruction: add
+%Registers%
+r0 0072
+r1 0002
+r2 001e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0072
+r1 0002
+r2 001e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0072
+r1 0002
+r2 001e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0072
+r1 0002
+r2 001e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0072
+r1 0002
+r2 001e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0072
+
+Instruction: add
+%Registers%
+r0 0072
+r1 0002
+r2 0020
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0072
+r1 0002
+r2 0020
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0072
+r1 0002
+r2 0020
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0072
+r1 0002
+r2 0020
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 006f
+r1 0002
+r2 0020
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 006f
+
+Instruction: add
+%Registers%
+r0 006f
+r1 0002
+r2 0022
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 006f
+r1 0002
+r2 0022
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 006f
+r1 0002
+r2 0022
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 006f
+r1 0002
+r2 0022
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0072
+r1 0002
+r2 0022
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0072
+
+Instruction: add
+%Registers%
+r0 0072
+r1 0002
+r2 0024
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0072
+r1 0002
+r2 0024
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0072
+r1 0002
+r2 0024
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0072
+r1 0002
+r2 0024
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0020
+r1 0002
+r2 0024
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0020
+
+Instruction: add
+%Registers%
+r0 0020
+r1 0002
+r2 0026
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0020
+r1 0002
+r2 0026
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0020
+r1 0002
+r2 0026
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0020
+r1 0002
+r2 0026
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0077
+r1 0002
+r2 0026
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0077
+
+Instruction: add
+%Registers%
+r0 0077
+r1 0002
+r2 0028
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0077
+r1 0002
+r2 0028
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0077
+r1 0002
+r2 0028
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0077
+r1 0002
+r2 0028
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0068
+r1 0002
+r2 0028
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0068
+
+Instruction: add
+%Registers%
+r0 0068
+r1 0002
+r2 002a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0068
+r1 0002
+r2 002a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0068
+r1 0002
+r2 002a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0068
+r1 0002
+r2 002a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0069
+r1 0002
+r2 002a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0069
+
+Instruction: add
+%Registers%
+r0 0069
+r1 0002
+r2 002c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0069
+r1 0002
+r2 002c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0069
+r1 0002
+r2 002c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0069
+r1 0002
+r2 002c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 006c
+r1 0002
+r2 002c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 006c
+
+Instruction: add
+%Registers%
+r0 006c
+r1 0002
+r2 002e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 006c
+r1 0002
+r2 002e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 006c
+r1 0002
+r2 002e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 006c
+r1 0002
+r2 002e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0065
+r1 0002
+r2 002e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0065
+
+Instruction: add
+%Registers%
+r0 0065
+r1 0002
+r2 0030
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0065
+r1 0002
+r2 0030
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0065
+r1 0002
+r2 0030
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0065
+r1 0002
+r2 0030
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0020
+r1 0002
+r2 0030
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0020
+
+Instruction: add
+%Registers%
+r0 0020
+r1 0002
+r2 0032
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0020
+r1 0002
+r2 0032
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0020
+r1 0002
+r2 0032
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0020
+r1 0002
+r2 0032
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0065
+r1 0002
+r2 0032
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0065
+
+Instruction: add
+%Registers%
+r0 0065
+r1 0002
+r2 0034
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0065
+r1 0002
+r2 0034
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0065
+r1 0002
+r2 0034
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0065
+r1 0002
+r2 0034
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0078
+r1 0002
+r2 0034
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0078
+
+Instruction: add
+%Registers%
+r0 0078
+r1 0002
+r2 0036
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0078
+r1 0002
+r2 0036
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0078
+r1 0002
+r2 0036
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0078
+r1 0002
+r2 0036
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0065
+r1 0002
+r2 0036
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0065
+
+Instruction: add
+%Registers%
+r0 0065
+r1 0002
+r2 0038
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0065
+r1 0002
+r2 0038
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0065
+r1 0002
+r2 0038
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0065
+r1 0002
+r2 0038
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0063
+r1 0002
+r2 0038
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0063
+
+Instruction: add
+%Registers%
+r0 0063
+r1 0002
+r2 003a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0063
+r1 0002
+r2 003a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0063
+r1 0002
+r2 003a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0063
+r1 0002
+r2 003a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0075
+r1 0002
+r2 003a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0075
+
+Instruction: add
+%Registers%
+r0 0075
+r1 0002
+r2 003c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0075
+r1 0002
+r2 003c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0075
+r1 0002
+r2 003c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0075
+r1 0002
+r2 003c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0074
+r1 0002
+r2 003c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0074
+
+Instruction: add
+%Registers%
+r0 0074
+r1 0002
+r2 003e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0074
+r1 0002
+r2 003e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0074
+r1 0002
+r2 003e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0074
+r1 0002
+r2 003e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0069
+r1 0002
+r2 003e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0069
+
+Instruction: add
+%Registers%
+r0 0069
+r1 0002
+r2 0040
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0069
+r1 0002
+r2 0040
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0069
+r1 0002
+r2 0040
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0069
+r1 0002
+r2 0040
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 006e
+r1 0002
+r2 0040
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 006e
+
+Instruction: add
+%Registers%
+r0 006e
+r1 0002
+r2 0042
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 006e
+r1 0002
+r2 0042
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 006e
+r1 0002
+r2 0042
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 006e
+r1 0002
+r2 0042
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0067
+r1 0002
+r2 0042
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0067
+
+Instruction: add
+%Registers%
+r0 0067
+r1 0002
+r2 0044
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0067
+r1 0002
+r2 0044
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0067
+r1 0002
+r2 0044
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0067
+r1 0002
+r2 0044
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 002e
+r1 0002
+r2 0044
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 002e
+
+Instruction: add
+%Registers%
+r0 002e
+r1 0002
+r2 0046
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 002e
+r1 0002
+r2 0046
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 002e
+r1 0002
+r2 0046
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 002e
+r1 0002
+r2 0046
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0020
+r1 0002
+r2 0046
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0020
+
+Instruction: add
+%Registers%
+r0 0020
+r1 0002
+r2 0048
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0020
+r1 0002
+r2 0048
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0020
+r1 0002
+r2 0048
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0020
+r1 0002
+r2 0048
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0048
+r1 0002
+r2 0048
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0048
+
+Instruction: add
+%Registers%
+r0 0048
+r1 0002
+r2 004a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0048
+r1 0002
+r2 004a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0048
+r1 0002
+r2 004a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0048
+r1 0002
+r2 004a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0061
+r1 0002
+r2 004a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0061
+
+Instruction: add
+%Registers%
+r0 0061
+r1 0002
+r2 004c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0061
+r1 0002
+r2 004c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0061
+r1 0002
+r2 004c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0061
+r1 0002
+r2 004c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 006c
+r1 0002
+r2 004c
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 006c
+
+Instruction: add
+%Registers%
+r0 006c
+r1 0002
+r2 004e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 006c
+r1 0002
+r2 004e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 006c
+r1 0002
+r2 004e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 006c
+r1 0002
+r2 004e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0074
+r1 0002
+r2 004e
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0074
+
+Instruction: add
+%Registers%
+r0 0074
+r1 0002
+r2 0050
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0074
+r1 0002
+r2 0050
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0074
+r1 0002
+r2 0050
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0074
+r1 0002
+r2 0050
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0069
+r1 0002
+r2 0050
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0069
+
+Instruction: add
+%Registers%
+r0 0069
+r1 0002
+r2 0052
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0069
+r1 0002
+r2 0052
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0069
+r1 0002
+r2 0052
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0069
+r1 0002
+r2 0052
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 006e
+r1 0002
+r2 0052
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 006e
+
+Instruction: add
+%Registers%
+r0 006e
+r1 0002
+r2 0054
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 006e
+r1 0002
+r2 0054
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 006e
+r1 0002
+r2 0054
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 006e
+r1 0002
+r2 0054
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 0067
+r1 0002
+r2 0054
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 0067
+
+Instruction: add
+%Registers%
+r0 0067
+r1 0002
+r2 0056
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 0067
+r1 0002
+r2 0056
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 0067
+r1 0002
+r2 0056
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 0067
+r1 0002
+r2 0056
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 002e
+r1 0002
+r2 0056
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 002e
+
+Instruction: add
+%Registers%
+r0 002e
+r1 0002
+r2 0058
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 002e
+r1 0002
+r2 0058
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 002e
+r1 0002
+r2 0058
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 002e
+r1 0002
+r2 0058
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d6
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: mov
+%Registers%
+r0 000a
+r1 0002
+r2 0058
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d9
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+MEM16[ff00] = 000a
+
+Instruction: add
+%Registers%
+r0 000a
+r1 0002
+r2 005a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01de
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jmp
+%Registers%
+r0 000a
+r1 0002
+r2 005a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01cd
+psw 8000
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: cmp
+%Registers%
+r0 000a
+r1 0002
+r2 005a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01d2
+psw 8001
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: jeq
+%Registers%
+r0 000a
+r1 0002
+r2 005a
+r3 ff00
+r4 0000
+r5 0000
+r6 fef0
+r7 01e2
+psw 8001
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+01
+c0
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: pop
+%Registers%
+r0 000a
+r1 0002
+r2 005a
+r3 01c0
+r4 0000
+r5 0000
+r6 fef2
+r7 01e4
+psw 8001
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+00
+00
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: pop
+%Registers%
+r0 000a
+r1 0002
+r2 0000
+r3 01c0
+r4 0000
+r5 0000
+r6 fef4
+r7 01e6
+psw 8001
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+00
+de
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: ret
+%Registers%
+r0 000a
+r1 0002
+r2 0000
+r3 01c0
+r4 0000
+r5 0000
+r6 fef6
+r7 00de
+psw 8001
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+
+%Changed values in memory%
+There were no changes in memory.
+
+Instruction: halt
+%Registers%
+r0 000a
+r1 0002
+r2 0000
+r3 01c0
+r4 0000
+r5 0000
+r6 fef6
+r7 00df
+psw 8001
+
+%Stack%
+00
+b2
+00
+02
+00
+a5
+00
+01
+00
+1a
+
+%Changed values in memory%
+There were no changes in memory.
+

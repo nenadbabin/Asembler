@@ -1,0 +1,60 @@
+%SECTIONS%
+           NAME           SIZE         NUMBER         R  W  E  P
+          .text             80              4         1  0  1  1
+          .data             52              8         1  1  0  1
+%END%
+
+%SYMBOLS%
+           NAME        SECTION          VALUE          SCOPE         NUMBER
+           text          .text              0          LOCAL              0
+           main          .text              0         GLOBAL              1
+           loop          .text             29          LOCAL              2
+     newRoutine          .text             62          LOCAL              3
+           data          .data              0          LOCAL              5
+       myString          .data              0          LOCAL              6
+      endString          .data             40          LOCAL              7
+          timer      undefined              0         GLOBAL              0
+         dataIn      undefined              0         GLOBAL              1
+        getchar      undefined              0         GLOBAL              2
+        dataOut      undefined              0         GLOBAL              3
+       printstr      undefined              0         GLOBAL              4
+%END%
+
+%RELOCATIONS%
+         OFFSET        SECTION         SYMBOL    RELATIVE_TO           TYPE
+             12          .text     newRoutine          .text           R_16
+             17          .text         dataIn         dataIn           R_16
+             22          .text        getchar        getchar           R_16
+             27          .text        dataOut        dataOut           R_16
+             41          .text           loop          .text           R_16
+             50          .text      endString          .data           R_16
+             55          .text       printstr       printstr           R_16
+             67          .text       printstr       printstr           R_16
+             71          .text       myString          .data           R_16
+%END%
+
+%SECTIONS_CONTENT%
+.text
+24 a0 10 ff 00 03 00 24 
+a0 04 00 00 3e 00 24 24 
+a0 00 00 24 26 00 00 00 
+24 28 a0 00 00 bc 26 24 
+48 44 4c 44 00 65 00 ac 
+00 1d 00 24 48 00 0a 00 
+8c 00 28 00 24 24 00 00 
+00 bc 24 94 24 c4 8c 24 
+24 24 00 00 00 8c 00 00 
+00 bc 24 94 24 94 24 cc 
+.end
+
+.data
+74 00 69 00 6d 00 65 00 
+72 00 20 00 69 00 6e 00 
+74 00 65 00 72 00 72 00 
+75 00 70 00 74 00 2e 00 
+2e 00 2e 00 0a 00 00 00 
+45 00 6e 00 64 00 21 00 
+0a 00 00 00 
+.end
+
+%END%
