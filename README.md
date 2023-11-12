@@ -1,4 +1,4 @@
-# Asembler and Emulator
+# Asembler and Emulator (System Software course project)
 
 This repository contains the implementation of a two-pass assembler and an interpretative emulator for a specified processor and computer system, respectively.
 
